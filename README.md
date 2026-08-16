@@ -214,15 +214,15 @@ This did **not** improve generalization.
 | Top-1 accuracy             |     **30%** |           20% |
 | Rank improvement vs seed 5 |   **-0.10** |         -0.20 |
 
-The likely limitation is sample size: several interaction classes contain only one or two independent training scenarios.
+The likely limitation is sample size. Several interaction classes contain only one or two independent training scenarios.
 
 The adaptive experiment is therefore treated as exploratory rather than as a validated improvement.
 
 ## Main Finding
 
-The central result is negative but informative:
+The central result is negative but informative.
 
-> **Interpretable physics signals can help distinguish Goal Force candidates, but a single linear physics scorer does not robustly generalize across heterogeneous physical interactions.**
+Interpretable physics signals can help distinguish Goal Force candidates, but a single linear physics scorer does not robustly generalize across heterogeneous physical interactions.
 
 The experiment also suggests that simply fitting separate weights by interaction type is insufficient with the current amount of data.
 

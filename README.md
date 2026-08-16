@@ -142,6 +142,8 @@ For each of the 10 development scenarios:
 
 This tests generalization across scenarios rather than merely across random seeds.
 
+![LOSO results](figures/loso_results.png)
+
 ### Global scorer results
 
 Mean LOSO performance:

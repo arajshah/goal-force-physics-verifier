@@ -1,0 +1,106 @@
+{
+  "metrics": [
+    "goal_completion",
+    "direction_alignment",
+    "contact_causality",
+    "motion_stability",
+    "flow_consistency"
+  ],
+  "normalization": "within-scenario min-max; metrics unavailable for an entire scenario are assigned neutral constant 0.5",
+  "missing_metric_policy": "all-missing within a scenario => normalized to 0.5 for all four candidates; partially missing within a scenario => error",
+  "metric_availability": {
+    "ball_dominos": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "bulb": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "cantaloupes": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "golf": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "paw_tool1": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "paw_tool2": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "pendulum": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "pool": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "tennis": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": true,
+      "motion_stability": true,
+      "flow_consistency": true
+    },
+    "toycar": {
+      "goal_completion": true,
+      "direction_alignment": true,
+      "contact_causality": false,
+      "motion_stability": true,
+      "flow_consistency": true
+    }
+  },
+  "weight_constraint": "nonnegative, sum to 1",
+  "grid_step": 0.1,
+  "development_all_weights": {
+    "goal_completion": 0.3,
+    "direction_alignment": 0.1,
+    "contact_causality": 0.3,
+    "motion_stability": 0.3,
+    "flow_consistency": 0.0
+  },
+  "training_scenarios": [
+    "ball_dominos",
+    "bulb",
+    "cantaloupes",
+    "golf",
+    "paw_tool1",
+    "paw_tool2",
+    "pendulum",
+    "pool",
+    "tennis",
+    "toycar"
+  ],
+  "training_candidates": 40,
+  "warning": "development_all uses all 10 training scenarios and is not an unbiased generalization estimate. Use leave-one-scenario-out results for development generalization, then freeze these weights before evaluating the 2 untouched final-test scenarios."
+}

@@ -1,0 +1,55 @@
+{
+  "metrics": [
+    "goal_completion",
+    "direction_alignment",
+    "contact_causality",
+    "motion_stability",
+    "flow_consistency"
+  ],
+  "strategy": "interaction-conditioned weights",
+  "grid_step": 0.1,
+  "adaptive_development_weights": {
+    "collision": {
+      "goal_completion": 0.3,
+      "direction_alignment": 0.1,
+      "contact_causality": 0.3,
+      "motion_stability": 0.3,
+      "flow_consistency": 0.0
+    },
+    "direct_actuation": {
+      "goal_completion": 0.4,
+      "direction_alignment": 0.5,
+      "contact_causality": 0.0,
+      "motion_stability": 0.0,
+      "flow_consistency": 0.1
+    },
+    "single_target": {
+      "goal_completion": 0.3,
+      "direction_alignment": 0.2,
+      "contact_causality": 0.1,
+      "motion_stability": 0.2,
+      "flow_consistency": 0.2
+    },
+    "strike": {
+      "goal_completion": 0.5,
+      "direction_alignment": 0.2,
+      "contact_causality": 0.2,
+      "motion_stability": 0.1,
+      "flow_consistency": 0.0
+    }
+  },
+  "scenario_modes": {
+    "ball_dominos": "collision",
+    "bulb": "direct_actuation",
+    "cantaloupes": "collision",
+    "golf": "strike",
+    "paw_tool1": "direct_actuation",
+    "paw_tool2": "direct_actuation",
+    "pendulum": "strike",
+    "pool": "collision",
+    "tennis": "collision",
+    "toycar": "single_target"
+  },
+  "single_target_loso_policy": "If no other scenario with the same interaction_mode exists, fall back to global training scenarios excluding the held-out scenario.",
+  "warning": "Exploratory only. Interaction groups are small: collision=4, strike=2, direct_actuation=3, single_target=1. Do not treat mode-specific fitted weights as statistically reliable."
+}

@@ -1,0 +1,12 @@
+fold,training_scenarios,goal_completion,direction_alignment,contact_causality,motion_stability,flow_consistency
+held_out_ball_dominos,"bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,tennis,toycar",0.4,0.4,0.1,0.0,0.1
+held_out_bulb,"ball_dominos,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,tennis,toycar",0.5,0.3,0.1,0.1,0.0
+held_out_cantaloupes,"ball_dominos,bulb,golf,paw_tool1,paw_tool2,pendulum,pool,tennis,toycar",0.4,0.4,0.1,0.0,0.1
+held_out_golf,"ball_dominos,bulb,cantaloupes,paw_tool1,paw_tool2,pendulum,pool,tennis,toycar",0.3,0.1,0.3,0.3,0.0
+held_out_paw_tool1,"ball_dominos,bulb,cantaloupes,golf,paw_tool2,pendulum,pool,tennis,toycar",0.3,0.1,0.3,0.3,0.0
+held_out_paw_tool2,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,pendulum,pool,tennis,toycar",0.3,0.1,0.3,0.3,0.0
+held_out_pendulum,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pool,tennis,toycar",0.2,0.1,0.4,0.3,0.0
+held_out_pool,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,tennis,toycar",0.3,0.1,0.3,0.3,0.0
+held_out_tennis,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,toycar",0.3,0.1,0.3,0.3,0.0
+held_out_toycar,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,tennis",0.3,0.1,0.3,0.3,0.0
+development_all,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,tennis,toycar",0.3,0.1,0.3,0.3,0.0

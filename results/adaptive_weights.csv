@@ -1,0 +1,15 @@
+fold,held_out_scenario,interaction_mode,fit_scope,training_scenarios,goal_completion,direction_alignment,contact_causality,motion_stability,flow_consistency
+held_out_ball_dominos,ball_dominos,collision,same_interaction_mode,"cantaloupes,pool,tennis",0.6,0.0,0.1,0.2,0.1
+held_out_bulb,bulb,direct_actuation,same_interaction_mode,"paw_tool1,paw_tool2",0.4,0.4,0.1,0.1,0.0
+held_out_cantaloupes,cantaloupes,collision,same_interaction_mode,"ball_dominos,pool,tennis",0.3,0.1,0.1,0.4,0.1
+held_out_golf,golf,strike,same_interaction_mode,pendulum,0.4,0.2,0.1,0.2,0.1
+held_out_paw_tool1,paw_tool1,direct_actuation,same_interaction_mode,"bulb,paw_tool2",0.4,0.2,0.1,0.1,0.2
+held_out_paw_tool2,paw_tool2,direct_actuation,same_interaction_mode,"bulb,paw_tool1",0.1,0.1,0.4,0.4,0.0
+held_out_pendulum,pendulum,strike,same_interaction_mode,golf,0.3,0.1,0.4,0.1,0.1
+held_out_pool,pool,collision,same_interaction_mode,"ball_dominos,cantaloupes,tennis",0.3,0.1,0.3,0.3,0.0
+held_out_tennis,tennis,collision,same_interaction_mode,"ball_dominos,cantaloupes,pool",0.1,0.0,0.0,0.8,0.1
+held_out_toycar,toycar,single_target,global_fallback_no_same_mode_training_scenario,"ball_dominos,bulb,cantaloupes,golf,paw_tool1,paw_tool2,pendulum,pool,tennis",0.3,0.1,0.3,0.3,0.0
+development_all_collision,,collision,all_training_scenarios_in_mode,"ball_dominos,cantaloupes,pool,tennis",0.3,0.1,0.3,0.3,0.0
+development_all_direct_actuation,,direct_actuation,all_training_scenarios_in_mode,"bulb,paw_tool1,paw_tool2",0.4,0.5,0.0,0.0,0.1
+development_all_single_target,,single_target,all_training_scenarios_in_mode,toycar,0.3,0.2,0.1,0.2,0.2
+development_all_strike,,strike,all_training_scenarios_in_mode,"golf,pendulum",0.5,0.2,0.2,0.1,0.0

@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Large/generated data
+data/
+features/
+test_features/
+data_raw/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Generated outputs
+results/*.mp4
+results/*debug*/
+results/*overlay*
+
+# Temporary files
+*.tmp
+*.log
+
+# Colab / notebook artifacts
+.ipynb_checkpoints/

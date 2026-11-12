@@ -1,3 +1,10 @@
+"""Evaluate the frozen physics verifier on the untouched final-test scenarios.
+
+Scores the soccer and paw_tool3 candidates with the development-all weights
+from results/scorer_config.json and writes the per-scenario results to
+results/final_test_evaluation.csv.
+"""
+
 import json
 import itertools
 from pathlib import Path
@@ -11,6 +18,11 @@ TEST_SCENARIOS = {"soccer", "paw_tool3"}
 
 
 def normalize_within_scenario(df, metrics):
+    """Min-max normalize each metric within its scenario.
+
+    A metric that is constant or entirely missing within a scenario maps to
+    0.5; partially missing values raise an error instead of being guessed.
+    """
     out = df.copy()
 
     for scenario, idx in out.groupby("scenario").groups.items():
@@ -38,6 +50,10 @@ def normalize_within_scenario(df, metrics):
 
 
 def pairwise_accuracy(group):
+    """Fraction of candidate pairs the verifier orders like the human ranking.
+
+    Ties in verifier score count as half correct.
+    """
     correct = 0.0
     total = 0
 

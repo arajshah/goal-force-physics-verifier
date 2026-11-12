@@ -258,7 +258,8 @@ This points toward richer approaches such as:
     ├── extract_metrics.py
     ├── fit_scorer.py
     ├── fit_scorer_adaptive.py
-    └── evaluate_test.py
+    ├── evaluate_test.py
+    └── visualize_features.py
 ```
 
 Large generated videos and extracted features are excluded from Git by default.

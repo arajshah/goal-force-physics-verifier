@@ -1,3 +1,9 @@
+"""Render mask and track overlays for a few seed-5 videos.
+
+Reads segmentation masks and tracked points from the extracted features and
+writes annotated videos to results/ for visual inspection.
+"""
+
 from pathlib import Path
 
 import cv2
@@ -21,6 +27,11 @@ MASK_COLORS = [
 
 
 def create_overlay(name: str) -> None:
+    """Write an overlay video for one seed-5 video.
+
+    Tints each object's mask and draws every fourth tracked point on top of
+    the original frames.
+    """
     video_path = VIDEO_DIR / f"{name}.mp4"
     feature_path = FEATURE_DIR / f"{name}.npz"
     output_path = OUTPUT_DIR / f"{name}_overlay.mp4"

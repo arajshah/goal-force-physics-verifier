@@ -1,3 +1,12 @@
+"""Fit adaptive per-interaction-mode weights for the physics verifier.
+
+Grid-searches weights over the five physics metrics (goal completion, direction
+alignment, contact causality, motion stability, flow consistency), scoring each
+candidate by pairwise accuracy and rank correlation against the human rankings
+on the frozen 10 training scenarios (seeds 5-8), and saves the best weights per
+interaction mode along with the evaluation summary.
+"""
+
 from __future__ import annotations
 
 import argparse

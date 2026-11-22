@@ -1,3 +1,5 @@
+"""Fit the physics plausibility scorer and report rank correlations."""
+
 from __future__ import annotations
 
 import argparse

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+"""Extract physics metrics from simulation results for scoring."""
+
 from __future__ import annotations
 
 import argparse

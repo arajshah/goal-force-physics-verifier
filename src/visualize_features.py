@@ -1,7 +1,8 @@
 """Render mask and track overlays for a few seed-5 videos.
 
 Reads segmentation masks and tracked points from the extracted features and
-writes annotated videos to results/ for visual inspection.
+writes annotated videos to results/ for visual inspection. Each annotated
+video keeps the original frames with the masks and tracks drawn on top.
 """
 
 from pathlib import Path

@@ -2,7 +2,8 @@
 
 Scores the soccer and paw_tool3 candidates with the development-all weights
 from results/scorer_config.json and writes the per-scenario results to
-results/final_test_evaluation.csv.
+results/final_test_evaluation.csv. Nothing is refit on the final-test
+scenarios; the development-all weights are used as-is.
 """
 
 import json
